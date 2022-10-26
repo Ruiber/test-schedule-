@@ -5,7 +5,7 @@ name: scheduled-table-generator
 
 on:
   schedule:
-      - cron: '5 * * * *'  
+      - cron: '0 22 * * *'  
 
 jobs:
 
