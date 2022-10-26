@@ -5,7 +5,7 @@ name: scheduled-table-generator
 
 on:
   schedule:
-      - cron: '0 22 * * *'  
+      - cron: '55 22 * * *'  
 
 jobs:
 
@@ -26,7 +26,7 @@ jobs:
     
     - name: Run export data
       run: |
-        cd ../export_data
+        cd export_data/
         go run main.go -t phase2 -v 2
     
     - name: Get current date
